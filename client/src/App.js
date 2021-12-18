@@ -32,15 +32,9 @@ function App() {
           of them to render at a time
         */}
         <Routes>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
+          <Route exact path="/" element={<Home/>}/>
+          <Route path="/about"  element={<About/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
       </div>
     </Router>
