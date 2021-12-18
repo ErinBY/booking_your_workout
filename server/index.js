@@ -4,8 +4,8 @@ const port = 3000;
 // const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
-const config = require('../config/key');
-const {Member} = require("./models/Member");
+const config = require('../server/config/key');
+const {Member} = require("../server/models/Member");
 
 //application/x-www-form-urlencoded를 분석해서 갖고오는 것
 // app.use(express.urlencoded({extended:true}));
