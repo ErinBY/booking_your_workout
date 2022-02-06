@@ -19,16 +19,16 @@ function LandingPage() {
     return (
         <div className="h-100">
             <div className="float-start col-4">
-                <Button className="m-3" variant="secondary" type="submit"><Link to="/">BANANA</Link></Button>
+                <Button className="m-3 btn-light" variant="secondary" type="submit"><Link to="/">BANANA</Link></Button>
             </div>
             <div className="float-end col-8 text-end">
-                <Button variant="secondary" type="submit"><Link to="/login">Login</Link></Button>
-                <Button className="m-3" variant="secondary" type="submit"><Link to="/register">무료로 시작하기</Link></Button>
+                <Button className="btn-light" variant="secondary" type="submit"><Link to="/login">Login</Link></Button>
+                <Button className="m-3 btn-light" variant="secondary" type="submit"><Link to="/register">무료로 시작하기</Link></Button>
             </div>
 
-            <Container className="float-none text-center h-100">
-                <Container ClassName="h-100">
-                    <Button variant="primary" type="submit"><Link to="/register">무료로 시작하기</Link></Button>
+            <Container className="float-none text-center h-100 flex">
+                <Container className="h-100 flex v-center h-center">
+                    <Button className="btn-light" variant="primary" type="submit"><Link to="/register">무료로 시작하기</Link></Button>
                 </Container>
             </Container>
         </div>
