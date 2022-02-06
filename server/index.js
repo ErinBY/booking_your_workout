@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 5000;
 // const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
@@ -30,6 +30,10 @@ mongoose.connect(config.mongoURI).then(()=>console.log('connect'))
 
 app.get('/', (req, res) => {
   res.send('backend server start');
+})
+
+app.get('/api/hello',(req,res)=>{
+  res.send('hello World~')
 })
 
 app.post('/api/member/register', (req,res)=>{
