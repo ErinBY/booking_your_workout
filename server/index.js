@@ -32,9 +32,9 @@ app.get('/', (req, res) => {
   res.send('backend server start');
 })
 
-app.get('/api/hello',(req,res)=>{
-  res.send('hello World~')
-})
+// app.get('/api/hello',(req,res)=>{
+//   res.send('hello World~')
+// })
 
 app.post('/api/member/register', (req,res)=>{
   //회원가입 할 때 필요한 정보들 ->  client에서 가져오면

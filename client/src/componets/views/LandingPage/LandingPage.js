@@ -10,11 +10,11 @@ import {
   } from "react-router-dom";
 
 function LandingPage() {
-    useEffect(()=> {
-      axios.get('/api/hello')
-      .then(response=>{console.log(response)})
+    // useEffect(()=> {
+    //   axios.get('/api/hello')
+    //   .then(response=>{console.log(response)})
   
-    },[])
+    // },[])
     
     return (
         <div className="h-100">
@@ -34,5 +34,3 @@ function LandingPage() {
         </div>
     )
 }
-
-export default LandingPage
