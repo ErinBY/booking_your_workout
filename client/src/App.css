@@ -63,3 +63,6 @@ body{
   justify-content: center;
 
 }
+.m-auto{
+  margin:0 auto;
+}

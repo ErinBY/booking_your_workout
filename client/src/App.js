@@ -10,7 +10,7 @@ import { Routes } from 'react-router-dom';
 import LandingPage from './componets/views/LandingPage/LandingPage';
 import LoginPage from './componets/views/LoginPage/LoginPage';
 import RegisterPage from './componets/views/RegisterPage/RegisterPage';
-
+import CategoryPage from './componets/views/CategoryPage/CategoryPage';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
           <Route exact path="/" element={<LandingPage/>}/>
           <Route exact path="/login"  element={<LoginPage/>}/>
           <Route exact path="/register" element={<RegisterPage/>}/>
+          <Route exact path="/category" element={<CategoryPage/>}/>
         </Routes>
       </div>
     </Router>

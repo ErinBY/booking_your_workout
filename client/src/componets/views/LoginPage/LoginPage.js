@@ -4,7 +4,11 @@ import Toast from 'react-bootstrap/Toast';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from "react-router-dom";
 import '../../../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -43,7 +47,7 @@ const App = () => (
   </Form.Group>
   <div className="text-center">
   <Button variant="primary" type="submit">
-    로그인
+  <Link to="/category">로그인</Link>
   </Button>
   </div>
   <div className="text-center">
