@@ -24,10 +24,10 @@ function App() {
           of them to render at a time
         */}
         <Routes>
-          <Route basename={process.env.PUBLIC_URL} exact path="/" element={<LandingPage/>}/>
-          <Route exact path="/login"  element={<LoginPage/>}/>
-          <Route exact path="/register" element={<RegisterPage/>}/>
-          <Route exact path="/category" element={<CategoryPage/>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/'} element={<LandingPage/>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/login'}  element={<LoginPage/>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/register'} element={<RegisterPage/>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/category'} element={<CategoryPage/>}/>
         </Routes>
       </div>
     </Router>
