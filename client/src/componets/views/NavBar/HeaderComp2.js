@@ -7,10 +7,7 @@ import Container from 'react-bootstrap/esm/Container';
 
   function HeaderComp2() {
     return (
-      <Navbar
-    expand="md"
-    light
-  >
+      <Navbar expand="md" light>
     <NavbarBrand href="/category">
       설정
     </NavbarBrand>
