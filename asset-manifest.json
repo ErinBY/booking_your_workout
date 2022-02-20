@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/booking_your_workout/static/css/main.d6506185.css",
+    "main.js": "/booking_your_workout/static/js/main.bee7cd1a.js",
+    "static/js/787.070db070.chunk.js": "/booking_your_workout/static/js/787.070db070.chunk.js",
+    "static/media/AppleSDGothicNeoB.ttf": "/booking_your_workout/static/media/AppleSDGothicNeoB.4175a777557557f7d294.ttf",
+    "index.html": "/booking_your_workout/index.html",
+    "main.d6506185.css.map": "/booking_your_workout/static/css/main.d6506185.css.map",
+    "main.bee7cd1a.js.map": "/booking_your_workout/static/js/main.bee7cd1a.js.map",
+    "787.070db070.chunk.js.map": "/booking_your_workout/static/js/787.070db070.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6506185.css",
+    "static/js/main.bee7cd1a.js"
+  ]
+}
