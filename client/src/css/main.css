@@ -51,3 +51,97 @@
 .login_go span {
   margin-right: 8px;
 }
+
+.category_form {
+  width: 100%;
+  max-width: 860px;
+  margin: 36px auto;
+  width: 860px;
+  height: 573px;
+  padding: 52px 68px 80px;
+  border-radius: 20px;
+  border: solid 1px #f2f2f2;
+  background-color: #fff;
+}
+.category_form .title{
+  height: 31px;
+  margin: 0 410px 8px 0;
+  font-family: AppleSDGothicNeo;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292725;
+}
+.category_form .btnarea{
+  margin-bottom:28px;
+}
+.category_form .btnarea Button{
+  border-radius:20px;
+  float:right;
+}
+
+.category_form .listitem{
+  height: 52px;
+  margin: 0 0 16px;
+  padding: 6px 20px;
+  border-radius: 26px;
+  border: solid 1.5px #ebeaea;
+  background-color: #fff;
+}
+
+.category_form div{
+  width:100%;
+  float:left;
+}
+
+.category_form span{
+  height: 17px;
+  margin: 8px 208px 32px 0;
+  font-family: AppleSDGothicNeo;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #76726f;
+}
+
+.category_form .line{
+  width: 724px;
+  height: 1px;
+  margin: 32px 0 28px;
+  background-color: #efeeed;
+}
+
+.toggleIcon{
+  width:40px !important;
+  height:40px !important;
+  background-color:palevioletred;
+}
+.setIcon{
+  width:40px !important;
+  height:40px !important;
+  background-color: skyblue;
+  float:right !important;
+}
+
+.category_form .listitem span{
+  height: 19px;
+  margin: 11px 0px 10px 8px;
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292725;
+  float:left;
+}
