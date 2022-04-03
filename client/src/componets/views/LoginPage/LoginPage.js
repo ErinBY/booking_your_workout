@@ -47,7 +47,7 @@ const App = () => (
   </Form.Group>
   <div className="text-center">
   <Button variant="primary" type="submit">
-  <Link to="/category">로그인</Link>
+  <Link to={process.env.PUBLIC_URL + '/category'}>로그인</Link>
   </Button>
   </div>
   <div className="text-center">
