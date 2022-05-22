@@ -36,3 +36,30 @@ input.form-control {
 .bg-gray{
   background-color: #f8f9fa;
 }
+.f_left{
+  float:left;
+}
+.f_right{
+  float:right;
+}
+.t_left{
+  text-align:left;
+}
+.t_right{
+  text-align:right;
+}
+.t_center{
+  text-align:center;
+}
+.pl_0{
+  padding-left:0;
+}
+.pr_0{
+  padding-right:0;
+}
+.pt_0{
+  padding-top:0;
+}
+.pb_0{
+  padding-bottom:0;
+}

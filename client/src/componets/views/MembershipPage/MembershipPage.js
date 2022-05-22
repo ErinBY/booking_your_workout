@@ -28,29 +28,30 @@ function MembershipPage() {
                     <span>회원 등록 시 적용할 이용권을 추가하거나 관리할 수 있습니다.</span>
                     <div className="line"></div>
                         <div className="btnarea">
-                            <MembershipModal buttonLabel="이용권 등록"/>
+                            <MembershipModal buttonLabel="이용권 등록" className="membershipModal"/>
                         </div>
                     <div>
                         <div className="listitem">
-                          <div>개인레슨 30회</div><div className="setIcon"></div>
-                          <div>이용 횟수 : 30회</div><div>주간 이용 횟수 : 2회</div>
-                          <div>수업 요일 : 월,수,금</div><div>유효기간 : 6개월</div>
+                          <div className="itemtitle">개인레슨 30회</div><div className="setIcon"></div>
+                          <div className="item">이용 횟수 : 30회</div><div className="item">주간 이용 횟수 : 2회</div>
+                          <div className="item">수업 요일 : 월,수,금</div><div className="item">유효기간 : 6개월</div>
                         </div>
                         <div className="listitem">
-                          <div>개인레슨 30회</div><div className="setIcon"></div>
-                          <div>이용 횟수 : 30회</div><div>주간 이용 횟수 : 2회</div>
-                          <div>수업 요일 : 월,수,금</div><div>유효기간 : 6개월</div>
+                          <div className="itemtitle">개인레슨 30회</div><div className="setIcon"></div>
+                          <div className="item">이용 횟수 : 30회</div><div className="item">주간 이용 횟수 : 2회</div>
+                          <div className="item">수업 요일 : 월,수,금</div><div className="item">유효기간 : 6개월</div>
                         </div>
                         <div className="listitem">
-                          <div>개인레슨 30회</div><div className="setIcon"></div>
-                          <div>이용 횟수 : 30회</div><div>주간 이용 횟수 : 2회</div>
-                          <div>수업 요일 : 월,수,금</div><div>유효기간 : 6개월</div>
+                          <div className="itemtitle">개인레슨 30회</div><div className="setIcon"></div>
+                          <div className="item">이용 횟수 : 30회</div><div className="item">주간 이용 횟수 : 2회</div>
+                          <div className="item">수업 요일 : 월,수,금</div><div className="item">유효기간 : 6개월</div>
                         </div>
                         <div className="listitem">
-                          <div>개인레슨 30회</div><div className="setIcon"></div>
-                          <div>이용 횟수 : 30회</div><div>주간 이용 횟수 : 2회</div>
-                          <div>수업 요일 : 월,수,금</div><div>유효기간 : 6개월</div>
+                          <div className="itemtitle">개인레슨 30회</div><div className="setIcon"></div>
+                          <div className="item">이용 횟수 : 30회</div><div className="item">주간 이용 횟수 : 2회</div>
+                          <div className="item">수업 요일 : 월,수,금</div><div className="item">유효기간 : 6개월</div>
                         </div>
+                        
                     </div>
 
             </div>
