@@ -11,7 +11,7 @@ import LandingPage from './componets/views/LandingPage/LandingPage';
 import LoginPage from './componets/views/LoginPage/LoginPage';
 import RegisterPage from './componets/views/RegisterPage/RegisterPage';
 import CategoryPage from './componets/views/CategoryPage/CategoryPage';
-
+import MembershipPage from './componets/views/MembershipPage/MembershipPage';
 function App() {
   return (
     <Router>
@@ -28,6 +28,7 @@ function App() {
           <Route exact path={process.env.PUBLIC_URL + '/login'}  element={<LoginPage/>}/>
           <Route exact path={process.env.PUBLIC_URL + '/register'} element={<RegisterPage/>}/>
           <Route exact path={process.env.PUBLIC_URL + '/category'} element={<CategoryPage/>}/>
+          <Route exact path={process.env.PUBLIC_URL + '/membership'} element={<MembershipPage/>}/>
         </Routes>
       </div>
     </Router>

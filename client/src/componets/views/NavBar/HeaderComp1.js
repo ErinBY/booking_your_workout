@@ -22,17 +22,17 @@ import {
         navbar
       >
         <NavItem>
-          <NavLink href="/category">
+          <NavLink href={process.env.PUBLIC_URL + '/category'}>
             수업 관리
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/category">
+          <NavLink href={process.env.PUBLIC_URL + '/category'}>
             회원 관리
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/category">
+          <NavLink href={process.env.PUBLIC_URL + '/category'}>
             설정
           </NavLink>
         </NavItem>
