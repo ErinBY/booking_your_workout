@@ -5,7 +5,15 @@ const jwt = require('jsonwebtoken');
 
 
 const memberSchema = mongoose.Schema({
-    name:{
+    id:{
+        type: String,
+        maxlength: 50,
+    },
+    pwd:{
+        type: String,
+        maxlength: 50,
+    },
+    pwd2:{
         type: String,
         maxlength: 50,
     },
@@ -14,19 +22,26 @@ const memberSchema = mongoose.Schema({
         trim: true,
         unique:1
     },
-    password: {
+    bs_company: {
         type: String,
-        minlength: 5
+        trim: true,
+        unique:1
     },
-    lastname:{
-        type:String,
-        maxlength : 50,
+    bs_owner_name: {
+        type: String,
+        trim: true,
+        unique:1
     },
-    role:{
-        type: Number,  //member  등급
-        default:0
+    bs_company_hp: {
+        type: String,
+        trim: true,
+        unique:1
     },
-    image:String,
+    // role:{
+    //     type: Number,  //member  등급
+    //     default:0
+    // },
+    // image:String,
     token:{
         type: String
     },
@@ -34,19 +49,20 @@ const memberSchema = mongoose.Schema({
         type: Number
     }
 })
-
 memberSchema.pre('save', function(next){
     //회원가입 전에 하는 일 => 비밀번호 암호화
     var member = this;
 
-    if(member.isModified('password')) {        
+    console.log(member);
+    if(member.isModified('pwd') || member.isModified('pwd2')) {      
         bcrypt.genSalt(saltRounds, function(err, salt) {
             if(err) return next(err);
-            bcrypt.hash(member.password, salt, function(err, hash) {
+            bcrypt.hash(member.pwd, salt, function(err, hash) {
                 //myPlaintextPassword : 순수 비밀번호
                 // Store hash in your password DB.
                 if(err) return next(err);
-                member.password = hash;
+                member.pwd = hash;
+                member.pwd2 = hash;
                 next()
             });
         });        
@@ -54,7 +70,7 @@ memberSchema.pre('save', function(next){
         next()
     }
 })
-
+   
 memberSchema.methods.comparePassword = function(plainPassword, callback){
     //plainPassword 1234567  암호화된 비밀번호  :
     bcrypt.compare(plainPassword, this.password, function(err, isMatch){

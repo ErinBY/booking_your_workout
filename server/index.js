@@ -52,6 +52,7 @@ app.post('/api/member/register', (req,res)=>{
 })
 
 app.post('/login',(req,res)=>{
+  const member = new Member(req.body);
   //요청된 이메일 데이터베이스에서 찾기 
   Member.findOne({email:req.body.email},(err, member)=>{
     if(!member) return res.json({
