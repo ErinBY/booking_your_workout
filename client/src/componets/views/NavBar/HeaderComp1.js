@@ -27,12 +27,12 @@ import {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href={process.env.PUBLIC_URL + '/category'}>
+          <NavLink href={process.env.PUBLIC_URL + '/membership'}>
             회원 관리
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href={process.env.PUBLIC_URL + '/category'}>
+          <NavLink href={process.env.PUBLIC_URL + '/instructor'}>
             설정
           </NavLink>
         </NavItem>

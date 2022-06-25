@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter,Input,Form,FormGroup,Label,Col } from 'reactstrap';
 
-class MembershipModal extends React.Component {
+class InstructorModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -70,78 +70,59 @@ class MembershipModal extends React.Component {
           <Form>
             <FormGroup row>
               <Label
-                for="membershipnm"
+                className="item"
+                for="instructornm"
                 sm={3}
               >
-                이용권명
+                강사명
               </Label>
               <Col sm={9}>
                 <Input
-                  id="membershipnm"
-                  name="membershipnm"
-                  placeholder="이용권명을 입력해주세요"
+                  id="instructornm"
+                  name="instructornm"
+                  placeholder="강사명을 입력해주세요"
                 />
               </Col>
-              <div className="t_right"><span>0</span>/20자</div>
-              <Label className="title"
-                for="membershipcnt"
+              <Label
+                className="item"
+                for="instructornm"
                 sm={3}
               >
-                이용횟수
+                연락처
               </Label>
               <Col sm={3}>
-                <Input  className="t_right"
-                  id="membershipcnt"
-                  name="membershipcnt"
+                <Input
+                  id="tel01"
+                  name="tel01"
+                />
+              </Col>
+              <Col sm={3}>
+                <Input
+                  id="tel02"
+                  name="tel02"
+                />
+              </Col>
+              <Col sm={3}>
+                <Input
+                  id="tel03"
+                  name="tel03"
                 />
               </Col>
               <Label
-                sm={6} className="pl_0"
-              >회</Label>
-              <Label
-                for="membershipcnt"
-                sm={3} className="title"
+                className="item"
+                for="instructorinfo"
+                sm={3}
               >
-                수업요일
+                강사소개
               </Label>
               <Col sm={9}>
-                <div className="days">
-                  <span className="day" onClick={this.selectDay}>일</span>
-                  <span className="day" onClick={this.selectDay}>월</span>
-                  <span className="day" onClick={this.selectDay}>화</span>
-                  <span className="day" onClick={this.selectDay}>수</span>
-                  <span className="day" onClick={this.selectDay}>목</span>
-                  <span className="day" onClick={this.selectDay}>금</span>
-                  <span className="day" onClick={this.selectDay}>토</span>
-                  <span className="all" id="allbtn" onClick={this.selectDays}>전체</span>
-                </div>
-              </Col>
-              <Label
-                for="registPeriod"
-                sm={3} className="title"
-              >
-                유효기간
-              </Label>
-              <Col sm={3}>
-                <Input className="t_right"
-                  id="registPeriod"
-                  name="registPeriod"
-                />
-                </Col>
-                <Col sm={3} className="pl_0">
                 <Input
-                  id="dateunit"
-                  name="dateunit"
-                  type="select"
-                >
-                  <option>
-                    일
-                  </option>
-                  <option>
-                    개월
-                  </option>
-                </Input>
+                  id="instructorinfo"
+                  name="instructorinfo"
+                  type="textarea"
+                />
               </Col>
+              <div className="t_right"><span>0</span>/500자</div>
             </FormGroup>
           </Form>
           </ModalBody>
@@ -155,4 +136,4 @@ class MembershipModal extends React.Component {
   }
 }
 
-export default MembershipModal;
+export default InstructorModal;

@@ -28,7 +28,7 @@ import Container from 'react-bootstrap/esm/Container';
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href={process.env.PUBLIC_URL + '/category'}>
+          <NavLink href={process.env.PUBLIC_URL + '/instructor'}>
             강사 관리
           </NavLink>
         </NavItem>
